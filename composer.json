@@ -1,0 +1,33 @@
+{
+    "name": "saithink/wiki",
+    "description": "api document",
+    "type": "plugin",
+    "require": {
+        "doctrine/annotations": "1.13",
+        "symfony/class-loader": "1.22",
+        "topthink/think-view": "1.0"
+    },
+    "license": "Apache02.0",
+    "autoload": {
+        "psr-4": {
+            "Saithink\\Wiki\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "鄢立",
+            "email": "1430792918@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "think": {
+            "services": [
+                "saithink\\wiki\\Service"
+            ],
+            "config": {
+                "wiki": "src/config.php"
+            }
+        }
+    }
+}
