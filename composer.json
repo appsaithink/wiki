@@ -7,7 +7,7 @@
         "symfony/class-loader": "^3.4",
         "topthink/think-view": "^1.0"
     },
-    "license": "Apache02.0",
+    "license": "Apache-2.0",
     "autoload": {
         "psr-4": {
             "saithink\\Wiki\\": "src/"
