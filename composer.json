@@ -4,7 +4,7 @@
     "type": "plugin",
     "require": {
         "doctrine/annotations": "^1.13",
-        "symfony/class-loader": "^1.22",
+        "symfony/class-loader": "^3.4",
         "topthink/think-view": "^1.0"
     },
     "license": "Apache02.0",
