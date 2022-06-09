@@ -2,14 +2,15 @@
 
 namespace saithink\wiki;
 
-use think\facade\Route;
+use think\Route;
+use think\Service as TpService;
 
-class Service extends \think\Service
+class Service extends TpService
 {
-    $this->registerRoutes(function () {
-
-        Route::get('/wiki/docs', '\saithink\wiki\Index@docs');
-    });
-
-    Factory::configure(config('wiki'));
+    public function boot()
+    {
+        $this->registerRoutes(function (Route $route) {
+            $route->get('wiki/docs', "\\saithink\\wiki\\controller\\Index@index");
+        });
+    }
 }
