@@ -3,14 +3,14 @@
     "description": "api document",
     "type": "plugin",
     "require": {
-        "doctrine/annotations": "1.13",
-        "symfony/class-loader": "1.22",
-        "topthink/think-view": "1.0"
+        "doctrine/annotations": "^1.13",
+        "symfony/class-loader": "^1.22",
+        "topthink/think-view": "^1.0"
     },
     "license": "Apache02.0",
     "autoload": {
         "psr-4": {
-            "Saithink\\Wiki\\": "src/"
+            "saithink\\Wiki\\": "src/"
         }
     },
     "authors": [
